@@ -1,0 +1,34 @@
+.card {
+    border: 1px solid lightblue;
+    border-radius: 18px;
+    width: 340px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    animation-name: virat;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes virat {
+    100% {
+        width: 340px;
+        transform: rotate(3deg);
+        background-color: blueviolet;
+    }
+}
